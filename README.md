@@ -95,7 +95,9 @@ Modded:
 
 ![screenshot](assets/16_after.png)
 
-VIDEO HERE
+Video:
+
+[![video](https://img.youtube.com/vi/7pPC4HEW814/0.jpg)](https://www.youtube.com/watch?v=7pPC4HEW814)
 
 ## Detection vectors
 This is perhaps my favorite part. If we ignore the fact that people will use this to load random garbage, the detectability of this patch is practically non-existent. That is, unless the anti-cheat system deploys its own EFI application to check for the patch or attempts to load an unsigned image. By the time the OS boots up (more specifically, after the call to [ExitBootServices](https://uefi.org/specs/UEFI/2.9_A/07_Services_Boot_Services.html) - which occurs long before any boot-time Windows driver is loaded) the DXE driver will already have been erased from memory.
