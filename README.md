@@ -33,4 +33,8 @@ Now comes the most challenging part. To find the function responsible for image 
 
 ![screenshot](assets/4_ida.png)
 
+Once you've opened the file, search for the EFI_SECURITY_VIOLATION status code. This code corresponds to 0x800000000000001A in hex format. In IDA Pro, you can execute this search by navigating to 'Search > Immediate value...'." Check 'Find all occurences'.
+
+![screenshot](assets/5_value.png)
+
 ## Detection vectors
