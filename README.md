@@ -24,8 +24,13 @@ After loading the file, navigate to 'File > Search', and execute a case-insensit
 
 ![screenshot](assets/2_search.png)
 
-You should multiple results from SecurityStubDxe (GUID: `F80697E9-7FD6-4665-8646-88E33EF71DFC`). You can go to the image by clicking on the `Unicode text "image verification" found in PE32 image section at offset XXXXh`. Then right click on the 'PE32 image section' and select 'Extract body...'. 
+You should multiple results from SecurityStubDxe (GUID: `F80697E9-7FD6-4665-8646-88E33EF71DFC`).  You can navigate to the image by double-clicking on the entry `Unicode text "image verification" found in PE32 image section at offset XXXXh`. Then, right-click on the 'PE32 image section', and select 'Extract body...'.
 
 ![screenshot](assets/3_extract.png)
+
+### Finding image verification handler
+Now comes the most challenging part. To find the function responsible for image signature verification, you'll need to open the file in your preferred reverse engineering tool. In my case, that tool is [IDA Pro](https://hex-rays.com/ida-pro/). 
+
+![screenshot](assets/4_ida.png)
 
 ## Detection vectors
