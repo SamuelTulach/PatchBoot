@@ -84,4 +84,10 @@ Now, the real fun begins. As mentioned earlier, I was lucky enough to have a mot
 
 ![screenshot](assets/14_usb_flashback.png)
 
+However, you may not be as fortunate to have this functionality. If that's the case, I recommend searching the internet for guides on how to flash a modified BIOS on your specific motherboard model. There's also a [general guide available](https://winraid.level1techs.com/t/guide-how-to-flash-a-modded-ami-uefi-bios/30627) that could prove helpful.
+
+## Result
+VIDEO HERE
+
 ## Detection vectors
+This is perhaps my favorite part. If we ignore the fact that people will use this to load random garbage, the detectability of this patch is practically non-existent. That is, unless the anti-cheat system deploys its own EFI application to check for the patch or attempts to load an unsigned image. By the time the OS boots up (more specifically, after the call to [ExitBootServices](https://uefi.org/specs/UEFI/2.9_A/07_Services_Boot_Services.html) - which occurs long before any boot-time Windows driver is loaded) the DXE driver will already have been erased from memory.
