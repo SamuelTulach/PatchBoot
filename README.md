@@ -72,4 +72,16 @@ Open the file in a hex editor, such as [HxD](https://mh-nexus.de/en/hxd/). Searc
 
 After making the necessary edits, remember to save the file.
 
+## Rebuilding
+Reopen UefiTool if you've closed it, and load your firmware file. Follow the same process to search for the binaries as you did before. This time, instead of saving them, select 'Replace body...' and choose the file that you previously patched.
+
+![screenshot](assets/13_replace.png)
+
+Once you've replaced the file, save the firmware file and then close UefiTool.
+
+## Flashing
+"Now, the real fun begins. As mentioned earlier, I was lucky enough to have a motherboard with [USB BIOS FlashBack](https://www.asus.com/us/support/FAQ/1038568/). All I had to do was place the patched .CAP file onto a FAT32-formatted USB drive. Then, by pressing and holding the FlashBack button, I initiated the flashing process on the motherboard, and simply waited for it to complete.
+
+![screenshot](assets/14_usb_flashback.png)
+
 ## Detection vectors
