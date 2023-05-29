@@ -33,8 +33,20 @@ Now comes the most challenging part. To find the function responsible for image 
 
 ![screenshot](assets/4_ida.png)
 
-Once you've opened the file, search for the EFI_SECURITY_VIOLATION status code. This code corresponds to 0x800000000000001A in hex format. In IDA Pro, you can execute this search by navigating to 'Search > Immediate value...'." Check 'Find all occurences'.
+Once you've opened the file, search for the EFI_SECURITY_VIOLATION status code. This code corresponds to 0x800000000000001A in hex format. In IDA Pro, you can execute this search by navigating to 'Search > Immediate value...'. Check 'Find all occurences'.
 
 ![screenshot](assets/5_value.png)
+
+You'll get a list of a few hits. Examine these functions one by one. All of them will be short, except for one. This longer function will also feature a policy check at the top and that will be the handler function.
+
+![screenshot](assets/6_search_result.png)
+
+![screenshot](assets/7_function_top.png)
+
+You can identify this as the handler because it checks the Secure Boot policy status as defined by the UEFI specification. If this policy is disabled, the handler simply returns EFI_SUCCESS.
+
+![screenshot](assets/9_defines.png)
+
+![screenshot](assets/8_policy.png)
 
 ## Detection vectors
