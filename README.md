@@ -49,7 +49,7 @@ You can identify this as the handler because it checks the Secure Boot policy st
 
 ![screenshot](assets/8_policy.png)
 
-Now, you just need to copy the function bytes from the hex view for future use.
+Now, you just need to copy the function bytes from the hex view for future use. Mine were `48 8B C4 48 89 58 08 48 89 68 18 48 89 70 20 48 89 50 10 57 41 54 41 55 41 56 41 57 48 81 EC` for example.
 
 ![screenshot](assets/10_bytes.png)
 
