@@ -56,7 +56,7 @@ Now, you just need to copy the function bytes from the hex view for future use.
 ## Patching
 Patching itself is incredibly easy. All we have to do is ensure the EFI_SUCCESS (zero) status is always returned. The [Microsoft ABI](https://learn.microsoft.com/en-us/cpp/build/x64-calling-convention?view=msvc-170), which is used here, returns the value from the function in the rax register.
 
-"For instance, the assembly code that zeroes out the rax register and then returns could be as follows:
+For instance, the assembly code that zeroes out the rax register and then returns could be as follows:
 ```
 xor rax, rax
 ret
