@@ -66,4 +66,10 @@ Compiled it would then be `48 31 c0 c3`.
 
 ![screenshot](assets/11_assembler.png)
 
+Open the file in a hex editor, such as [HxD](https://mh-nexus.de/en/hxd/). Search for the function bytes that you saved earlier and replace the starting bytes with the `48 31 c0 c3` sequence.
+
+![screenshot](assets/12_hex_edit.png)
+
+After making the necessary edits, remember to save the file.
+
 ## Detection vectors
