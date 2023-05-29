@@ -87,6 +87,14 @@ Now, the real fun begins. As mentioned earlier, I was lucky enough to have a mot
 However, you may not be as fortunate to have this functionality. If that's the case, I recommend searching the internet for guides on how to flash a modified BIOS on your specific motherboard model. There's also a [general guide available](https://winraid.level1techs.com/t/guide-how-to-flash-a-modded-ami-uefi-bios/30627) that could prove helpful.
 
 ## Result
+Stock firmware:
+
+![screenshot](assets/15_prev.png)
+
+Modded:
+
+![screenshot](assets/16_after.png)
+
 VIDEO HERE
 
 ## Detection vectors
