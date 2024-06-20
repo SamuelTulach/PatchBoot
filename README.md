@@ -39,6 +39,8 @@ Once you've opened the file, search for the EFI_SECURITY_VIOLATION status code. 
 
 You'll get a list of a few hits. Examine these functions one by one. All of them will be short, except for one. This longer function will also feature a policy check at the top and that will be the handler function.
 
+**Note:** I have renamed the function to 'ImageVerficationHandler' myself. You have to go through them one by one and figure out which is which. 
+
 ![screenshot](assets/6_search_result.png)
 
 ![screenshot](assets/7_function_top.png)
